@@ -1,0 +1,42 @@
+{
+  "name": "gods-eye-view",
+  "private": true,
+  "version": "1.0.2",
+  "description": "A real-time intelligence console for planet Earth \u2014 photorealistic 3D globe, live aircraft/ships/satellites/earthquakes/CCTV, and hands-free voice control. Runs in a browser.",
+  "type": "module",
+  "license": "MIT",
+  "author": "anuveytq-sys",
+  "homepage": "https://github.com/anuveytq-sys/Space-View-Gods-Eye#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anuveytq-sys/Space-View-Gods-Eye.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anuveytq-sys/Space-View-Gods-Eye/issues"
+  },
+  "engines": {
+    "node": ">=24.14.0 <25 || >=26 <27"
+  },
+  "keywords": [
+    "cesium",
+    "3d-globe",
+    "geospatial",
+    "osint",
+    "spatial-intelligence",
+    "photorealistic-3d-tiles",
+    "adsb",
+    "ais",
+    "satellites",
+    "voice-control",
+    "openai-realtime",
+    "visualization"
+  ],
+  "scripts": {
+    "doctor": "node scripts/setup-doctor.mjs",
+    "dev": "vite",
+    "dev:secure": "./scripts/dev-secure.sh",
+    "opensky:import": "./scripts/opensky-import-client.sh",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
