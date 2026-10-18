@@ -1,4 +1,7 @@
-/** Logo / branding gaze animation */
-export function createLogoGaze(element) {
-  return { start() {}, stop() {} };
+/** Logo gaze / branding animation helpers */
+export function attachLogoGaze(logoEl) {
+  if (!logoEl) return { destroy() {} };
+  return {
+    destroy() {},
+  };
 }

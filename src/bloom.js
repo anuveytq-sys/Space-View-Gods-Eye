@@ -1,4 +1,5 @@
-/** Bloom / post-process effect helpers */
-export function createBloomStage(viewer) {
-  return null;
+/** Bloom post-process stage helpers */
+export function ensureBloom(viewer, enabled = false) {
+  // Placeholder – full bloom stage is configured in the main viewer setup.
+  return { enabled };
 }
