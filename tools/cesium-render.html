@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    html, body, #cesiumContainer { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+    /* Hide all Cesium UI widgets for clean offscreen capture */
+    .cesium-viewer-bottom, .cesium-viewer-toolbar, .cesium-viewer-animationContainer,
+    .cesium-viewer-timelineContainer, .cesium-viewer-fullscreenContainer,
+    .cesium-viewer-vrContainer, .cesium-credit-logoContainer, .cesium-credit-expand-link {
+      display: none !important;
+    }
+  </style>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.125/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    // Parameters injected by cesium-render.mjs via page.evaluate
+    window.__GEV_RENDER__ = window.__GEV_RENDER__ || {};
+  </script>
+</body>
+</html>
