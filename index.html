@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="anuveytq-sys" />
+  <title>God's Eye View</title>
+  <meta name="description" content="Real-time geospatial intelligence console — photorealistic 3D globe, live aircraft, ships, satellites, and voice control." />
+  <link rel="icon" type="image/png" href="/public/icon-192.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Cesium is loaded by the app; keep this shell minimal -->
+</head>
+<body>
+  <div id="app">
+    <div id="cesiumContainer" class="cesium-container"></div>
+
+    <!-- HUD / cockpit overlays are injected by src/main.js -->
+    <div id="hud-root" aria-hidden="true"></div>
+    <div id="panel-stack" aria-hidden="true"></div>
+    <div id="annotation-layer" aria-hidden="true"></div>
+
+    <!-- Loading screen -->
+    <div id="loader" class="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">🌐</div>
+        <h1 class="loader-title">God's Eye View</h1>
+        <p class="loader-status">Initializing photorealistic world...</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
